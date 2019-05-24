@@ -35,6 +35,11 @@ export default class ImageService {
 	getUnsplashImage() {
 		_imgApi.get()
 			.then(res => {
+				// console.log(res)
+				if (res.data.large_url == null) {
+					console.log("re-getting image")
+					return this.getUnsplashImage()
+				}
 				let data = new Image(res.data)
 				_setState('unsplashImages', data)
 			})

@@ -1,7 +1,11 @@
 import QuoteService from "./quote-service.js";
 
-let _qs = new QuoteService()
+//private
+let _quoteservice = new QuoteService()
 
+
+
+//public
 export default class QuoteController {
 
 }
