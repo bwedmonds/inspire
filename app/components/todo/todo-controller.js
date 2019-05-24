@@ -5,12 +5,18 @@ let _todoService = new TodoService()
 function _drawTodos() {
 	//WHAT IS MY PURPOSE?
 	let todos = _todoService.Todos
+	let incomplete = 0
 	let template = ''
-	// for (let i = 0; i < hero.length; i++) {
-	// 	let herolist = hero[i];
-	// 	template += herolist.Template
-}
-document.getElementById("todos").innerHTML = template;
+
+	todos.forEach(t => {
+		if (!t.completed) {
+			incomplete++
+		}
+		template += t.getTemplate()
+	})
+
+	template += `<h4>${incomplete} items left to do</h4>`
+	document.getElementById("todos").innerHTML = template;
 }
 
 function _drawError() {
