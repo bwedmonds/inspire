@@ -2,3 +2,11 @@
   color: red;
   font-size: 2em;
 }
+
+body {
+  background-size: cover;
+}
+
+/* #weather{
+  background: transparent;
+} */
