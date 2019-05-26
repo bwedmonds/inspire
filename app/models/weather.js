@@ -17,7 +17,7 @@ export default class Weather {
 
   get Template() {
     return `
-    <div class="card">
+    <div class="card bg-dark">
 			<div class="card-body">
 				<h5 class="card-title">${this.city}</h5>
         <h5 class="card-title">Kelvin: ${this.kelvin}</h5>
@@ -25,7 +25,9 @@ export default class Weather {
         <h5 class="card-title">Farenheit: ${this.farenheit}</h5>
         <h5 class="card-title">${this.description}</h5>
         <img src="http://openweathermap.org/img/w/${this.icon}.png" alt="">
-				<h6 class="card-subtitle mb-2 text-muted">Humidity: ${this.humidity} - Wind Speed: ${this.windSpeed}</h6>
+        <h6 class="card-subtitle mb-2">Humidity: ${this.humidity}</h6>
+        <h6 class="card-subtitle mb-2">Wind Speed: ${this.windSpeed}</h6>
+
 			</div>
 		</div>
   `

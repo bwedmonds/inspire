@@ -15,7 +15,7 @@ function _drawTodos() {
 		template += t.getTemplate()
 	})
 
-	template += `<h4>${incomplete} items left to do</h4>`
+	template += `<h5>${incomplete} things left</h5>`
 	document.getElementById("todos").innerHTML = template;
 }
 
