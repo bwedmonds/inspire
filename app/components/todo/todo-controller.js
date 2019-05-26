@@ -8,14 +8,14 @@ function _drawTodos() {
 	let incomplete = 0
 	let template = ''
 
-	todos.forEach(t => {
-		if (!t.completed) {
+	todos.forEach(todo => {
+		if (!todo.completed) {
 			incomplete++
 		}
-		template += t.getTemplate()
+		template += todo.getTemplate()
 	})
 
-	template += `<h5>${incomplete} things left</h5>`
+	template += `<h5>Things left: ${incomplete}</h5>`
 	document.getElementById("todos").innerHTML = template;
 }
 

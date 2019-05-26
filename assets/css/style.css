@@ -29,6 +29,10 @@ body {
   font-weight: 700;
 }
 
+.strikethrough {
+  text-decoration: line-through;
+}
+
 .clock{
     text-align:center;
     width:auto;
@@ -39,4 +43,19 @@ body {
 .footer{
   opacity: 1;
   background-color: rgba(0,0,0,0.6);
+}
+a {
+  color: white;
+  font-size: x-large;
+}
+
+#quote a span{
+  display: none;
+  color: white;
+  font-size: x-large;
+}
+
+#quote a:hover span{
+  display: inline;
+  padding: 25px;
 }

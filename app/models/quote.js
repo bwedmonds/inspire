@@ -9,9 +9,8 @@ export default class Quote {
   get Template() {
     return `
     <div class="col-12">
-				<h2>Today's Quote:</h2>
+    <a href="#" style="color: white;text-decoration: none">Author:<span><i class="far fa-comment"></i> ${this.author}</span></a>
 				<h2>${this.quote}</h2>
-          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="${this.author}">Author:</button>
         </div>
         `
   }

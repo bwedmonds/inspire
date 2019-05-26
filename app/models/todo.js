@@ -13,7 +13,7 @@ export default class Todo {
           ${this.description}
         </label>
         <span onclick="app.controllers.todoController.removeTodo('${this._id}')">
-          <i class="far fa-trash-alt"></i>
+          <i class="fas fa-skull-crossbones"></i>
         </span>
       </div>`
   }
