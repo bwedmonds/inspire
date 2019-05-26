@@ -15,21 +15,22 @@
 
 <body id="bg-image">
 
-	<div class="cover-container d-flex h-100 mx-auto flex-column text-center">
-		<header class="row d-flex justify-content-start">
-			<div class="p-2 mr-auto" id="weather">
+	<div class="cover-container h-100 flex-column">
+		<header class="row d-flex">
+			<div class="col-3" id="weather">
 				<!-- Your Weather Template -->
 			</div>
-			<div class="p-2" id="form">
+			<div class="flex-column offset-7" id="form">
 				<form onsubmit="app.controllers.todoController.addTodo(event)">
 					<label for="todo-List">You got stuff!</label>
 					<input type="text" class="form-control" id="description" placeholder="Enter your stuff...">
 					<!-- <button class="btn btn-secondary" type="submit">ToDo It!</button> -->
 					<!-- <small class="form-text text-muted">You got this.</small> -->
 				</form>
-			</div>
-			<div class="p-2" id="todos">
-				Your todo Template
+
+				<div class="p-2" id="todos">
+					Your todo Template
+				</div>
 			</div>
 		</header>
 
@@ -49,7 +50,7 @@
 		Your todo Template
 	</div>
 	</div>-->
-		<main role="main" class="inner cover">
+		<main role="main" class="inner cover text-center">
 			<h1 class="cover-heading">Howdy, pardner.</h1>
 			<p class="lead">Enjoy your handy desktop thingy.</p>
 			<p class="lead">
