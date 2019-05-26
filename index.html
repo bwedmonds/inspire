@@ -22,25 +22,40 @@
 		</div>
 	</div>
 
-
-	<div id="quote">
-		The Quote
+	<div class="container">
+		<div class="row">
+			<div class="col-3" id="quote">
+				<!-- Your quote Template -->
+			</div>
+		</div>
 	</div>
 
-	<div>
-		<h2>A Todo List</h2>
-		<div id="todo-error"></div>
-		<form onsubmit=""></form>
+	<div id="todo-error"></div>
+	<!-- <form onsubmit=""></form> -->
 
-		<div class="col-6" id="form">
-			<form onsubmit="app.controllers.todoController.addTodo(event)">
-				<label for="todo-List">What you like to accomplish today?</label>
-				<input type="text" class="form-control" id="description" placeholder="I would like to...">
-				<button class="btn btn-secondary" type="submit">Add</button>
-				<small class="form-text text-muted">You got this.</small></form>
-		</div>
-		<div id="todos">
+	<div class="col-6" id="form">
+		<form onsubmit="app.controllers.todoController.addTodo(event)">
+			<label for="todo-List">You got stuff!</label>
+			<input type="text" class="form-control" id="description" placeholder="Enter your stuff...">
+			<!-- <button class="btn btn-secondary" type="submit">ToDo It!</button> -->
+			<!-- <small class="form-text text-muted">You got this.</small> -->
+		</form>
+	</div>
 
+	<div id="todos">
+		<!-- Your todo Template -->
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-3 clock">
+				<!-- Your clock Template -->
+				<span id="hr">00</span>
+				<span> : </span>
+				<span id="min">00</span>
+				<span> : </span>
+				<span id="sec">00</span>
+			</div>
 		</div>
 	</div>
 
@@ -58,6 +73,7 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+	<script src="app/clock.js"></script>
 	<script type="module" src="app/main.js"></script>
 </body>
 

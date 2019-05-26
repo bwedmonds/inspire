@@ -48,8 +48,4 @@ export default class ImageService {
 			})
 	}
 
-
-
-
-
 }

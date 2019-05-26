@@ -8,6 +8,24 @@ body {
   background-repeat: no-repeat;
 }
 
-/* #weather{
-  background: transparent;
+#weather{
+  background: white;
+}
+
+#quote{
+  background: white;
+}
+
+/* *{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    font-size:36px;
 } */
+
+.clock{
+    text-align:center;
+    width:auto;
+    height:auto;
+    font-size:36px;
+}
