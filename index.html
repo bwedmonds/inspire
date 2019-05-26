@@ -14,52 +14,56 @@
 </head>
 
 <body id="bg-image">
-	<div class="container">
-		<div class="row">
-			<div class="col-3" id="weather">
+
+	<div class="cover-container d-flex h-100 mx-auto flex-column text-center">
+		<header>
+
+		</header>
+		<div class="row d-flex justify-content-start">
+			<div class="p-2 mr-auto" id="weather">
 				<!-- Your Weather Template -->
 			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-3" id="quote">
-				<!-- Your quote Template -->
+			<div class="p-2" id="form">
+				<form onsubmit="app.controllers.todoController.addTodo(event)">
+					<label for="todo-List">You got stuff!</label>
+					<input type="text" class="form-control" id="description" placeholder="Enter your stuff...">
+					<!-- <button class="btn btn-secondary" type="submit">ToDo It!</button> -->
+					<!-- <small class="form-text text-muted">You got this.</small> -->
+				</form>
+			</div>
+			<div class="p-2" id="todos">
+				<!-- Your todo Template -->
 			</div>
 		</div>
-	</div>
+		<main role="main" class="inner cover">
+			<h1 class="cover-heading">Howdy, pardner.</h1>
+			<p class="lead">Enjoy your handy desktop thingy.</p>
+			<p class="lead">
+				<button class="btn btn-lg btn-light"><span id="hr">00</span>
+					<span> : </span>
+					<span id="min">00</span>
+					<span> : </span>
+					<span id="sec">00</span>
+				</button>
+			</p>
+		</main>
 
-	<div id="todo-error"></div>
+
+
+		<footer class="col-12 fixed-bottom text-center" id="quote">
+			<!-- <div class="row"> -->
+			<!-- <div class="col-12" id="quote"> -->
+			<!-- Your quote Template -->
+	</div>
+	<!-- </div> -->
+	</footer>
+
+	<!-- <div id="todo-error"></div> -->
 	<!-- <form onsubmit=""></form> -->
 
-	<div class="col-6" id="form">
-		<form onsubmit="app.controllers.todoController.addTodo(event)">
-			<label for="todo-List">You got stuff!</label>
-			<input type="text" class="form-control" id="description" placeholder="Enter your stuff...">
-			<!-- <button class="btn btn-secondary" type="submit">ToDo It!</button> -->
-			<!-- <small class="form-text text-muted">You got this.</small> -->
-		</form>
+
+
 	</div>
-
-	<div id="todos">
-		<!-- Your todo Template -->
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-3 clock">
-				<!-- Your clock Template -->
-				<span id="hr">00</span>
-				<span> : </span>
-				<span id="min">00</span>
-				<span> : </span>
-				<span id="sec">00</span>
-			</div>
-		</div>
-	</div>
-
-
 
 
 

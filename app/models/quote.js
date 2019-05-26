@@ -8,7 +8,7 @@ export default class Quote {
 
   get Template() {
     return `
-    <div class="col-3">
+    <div class="col-12">
 				<h2>Today's Quote:</h2>
 				<h2>${this.quote}</h2>
           <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="${this.author}">Author:</button>
